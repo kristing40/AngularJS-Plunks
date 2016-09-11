@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="myController">
+    <div ng-hide>
+        <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="employee in employees">
+          <td>{{employee.name}}</td>
+          <td>{{employee.gender}}</td>
+          <td>{{employee.salary}}</td>
+        </tr>
+      </tbody>
+    </table>
+      
+    </div>
+  </body>
+
+</html>
