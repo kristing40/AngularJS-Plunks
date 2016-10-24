@@ -1,0 +1,1 @@
+This file is a code illustration of how to use ng-hide/ng-show directive in angular.
